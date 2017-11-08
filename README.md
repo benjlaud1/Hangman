@@ -9,7 +9,6 @@ Game objectives:
 * Players will be able to see what letters have already been guessed
 * Players will be prompted when they miss/ properly guess a letter
 * Players will be prompted when they lose/ win the game
- 
- 
+
  -------
- -test
+This Hangman game is a work in progress application as I follow and work through a Java tutorial series on teamtreehouse.com 
