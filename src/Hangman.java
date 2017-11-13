@@ -7,12 +7,7 @@ public class Hangman {
 	    Prompter prompter = new Prompter(game);
 	    do {
 	      prompter.displayProgress();
-	      boolean isHit = prompter.promptForGuess();
-	      if (isHit) {
-	        System.out.println("We got a hit");
-	      } else {
-	        System.out.println("Opps... Missed");
-	      }
+	      prompter.promptForGuess();
 	    } while (game.getRemainingTries() > 0);
 	  }
 	
