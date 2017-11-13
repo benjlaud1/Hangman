@@ -31,4 +31,15 @@ public class Prompter {
                        	 game.getRemainingTries(),
                        	 game.getCurrentProgress());
 	}
+	
+	public void displayOutcome() {
+		if (game.isWon()) {
+			System.out.printf("Congratulations! You have properly guessed %s with %d tries remaining!%n",
+							  game.getAnswer(),
+							  game.getRemainingTries());
+		} else {
+			System.out.printf("You have run out of tries. The word was %s. Better luck next time.%n",
+							  game.getAnswer());
+		}
+	}
 }

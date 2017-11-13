@@ -11,6 +11,10 @@ public class Game {
 	    misses = "";
 	  }
 	  
+	  public String getAnswer() {
+		  return answer;
+	  }
+	  
 	  public boolean applyGuess(char letter) {
 		  letter = normalizeGuess(letter);
 		  boolean isHit = answer.indexOf(letter) != -1;
@@ -54,5 +58,9 @@ public class Game {
 			  progress += display;
 		  }
 		  return progress;
+	  }
+	  
+	  public boolean isWon() {
+		  return getCurrentProgress().indexOf('_') == -1;
 	  }
 }
